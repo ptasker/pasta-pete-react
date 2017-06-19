@@ -4,9 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Sample app used to compare against Vue.js. Companion repo: https://github.com/ptasker/pasta-pete-vue
 
+Run `npm install` to install all dependencies. 
+
 To get up and running, as per the documentation for Create React App:
 
 -----
+
 Once the installation is done, you can run some commands inside the project folder:
 
 ### `npm start` or `yarn start`
