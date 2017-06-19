@@ -11,7 +11,7 @@ class App extends Component {
         super();
         this.state = {
             pastadishes: samplePasta,
-                orders: {}
+            orders: {}
         };
 
         this.addToOrder = this.addToOrder.bind(this);
@@ -19,12 +19,12 @@ class App extends Component {
 
     addToOrder(key) {
         const orders = { ...this.state.orders };
-		//update or add
-		orders[ key ] = orders[ key ] + 1 || 1;
+        //update or add
+        orders[key] = orders[key] + 1 || 1;
 
-        this.setState( { orders } );
+        this.setState({ orders });
     }
-    
+
     render() {
         return (
             <div className="petes-pasta" >
