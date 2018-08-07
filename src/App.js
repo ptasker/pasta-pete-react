@@ -5,6 +5,18 @@ import PastaItem from './components/PastaItem';
 import Header from './components/Header';
 import samplePasta from './sample-pasta';
 
+class Wat extends Component {
+    render() {
+      return (
+          <>
+          <p>Bugs: Ehhhhh, what's up doc?</p>
+          <p>Fudd: Quiet WABBIT!?!</p>
+          --hilarity ensues--
+          </>
+      );
+    }
+  }
+
 class App extends Component {
 
     constructor() {
@@ -28,6 +40,7 @@ class App extends Component {
     render() {
         return (
             <div className="petes-pasta" >
+            <div><Wat /></div>
                 <img src={Logo} className="logo" alt="Pete's Pasta" />
                 <Header tagline="The best sauce in the Ottawa Valley!" />
                 <ul className="pasta-list">
