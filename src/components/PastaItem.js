@@ -1,5 +1,6 @@
 import React from "react";
-
+import PastaButton from './PastaButton'
+  
 class PastaItem extends React.Component {
 
     render() {
@@ -16,7 +17,7 @@ class PastaItem extends React.Component {
                         <p>
                             {details.desc}
                         </p>
-                        <button onClick={() => this.props.addToOrder(index)} className="btn btn-primary">Add to order</button> <mark>{this.props.orders || 0}</mark>
+                        <PastaButton index={index} onClick={this.props.addToOrder} toggle={this.props.toggle} orders={this.props.orders || 0} />
                     </div>
                 </div>
             </li>
